@@ -1,41 +1,41 @@
-# Apple Orchard India (appleorchard.in)
+# Apple Orchard India (applesorchard.in)
 
 > Free apple orchard guide for growers in Himachal Pradesh, Jammu & Kashmir, Uttarakhand and low-chill areas, by Gujarat Bio Organics. Built from Dr. YSP UHF Nauni, SKUAST-K, SKUAST-J, ICAR-CITH, NHB, MoA&FW and CIB&RC sources. English and Hindi.
 
 ## Key pages
-- [Apple farming in India: orchard guide](https://appleorchard.in/)
-- [Apple fertilizer schedule and calculator (bigha, kanal, nali)](https://appleorchard.in/fertilizer-schedule-and-calculator/)
-- [Apple varieties, rootstocks and pollinizers](https://appleorchard.in/varieties-and-rootstocks/)
-- [Apple root rot, collar rot and tree deaths](https://appleorchard.in/root-rot-and-tree-mortality/)
-- [Alternate bearing, fruit drop and small fruit](https://appleorchard.in/alternate-bearing-and-fruit-quality/)
-- [Apple spray schedule by stage](https://appleorchard.in/diseases-and-pests/spray-schedule/)
-- [सेब की खेती (Hindi)](https://appleorchard.in/hi/seb-ki-kheti/)
+- [Apple farming in India: orchard guide](https://applesorchard.in/)
+- [Apple fertilizer schedule and calculator (bigha, kanal, nali)](https://applesorchard.in/fertilizer-schedule-and-calculator/)
+- [Apple varieties, rootstocks and pollinizers](https://applesorchard.in/varieties-and-rootstocks/)
+- [Apple root rot, collar rot and tree deaths](https://applesorchard.in/root-rot-and-tree-mortality/)
+- [Alternate bearing, fruit drop and small fruit](https://applesorchard.in/alternate-bearing-and-fruit-quality/)
+- [Apple spray schedule by stage](https://applesorchard.in/diseases-and-pests/spray-schedule/)
+- [सेब की खेती (Hindi)](https://applesorchard.in/hi/seb-ki-kheti/)
 
 ## All pages
-- https://appleorchard.in/
-- https://appleorchard.in/apple-tree/
-- https://appleorchard.in/varieties-and-rootstocks/
-- https://appleorchard.in/varieties/red-delicious/
-- https://appleorchard.in/varieties/spur-and-high-colour-strains/
-- https://appleorchard.in/varieties/gala/
-- https://appleorchard.in/varieties/golden-delicious/
-- https://appleorchard.in/varieties/granny-smith/
-- https://appleorchard.in/varieties/fuji/
-- https://appleorchard.in/varieties/ambri/
-- https://appleorchard.in/varieties/low-chill-hrmn-99-anna/
-- https://appleorchard.in/varieties/rootstocks/
-- https://appleorchard.in/pruning-and-canopy-management/
-- https://appleorchard.in/fertilizer-schedule-and-calculator/
-- https://appleorchard.in/alternate-bearing-and-fruit-quality/
-- https://appleorchard.in/root-rot-and-tree-mortality/
-- https://appleorchard.in/diseases-and-pests/
-- https://appleorchard.in/diseases-and-pests/apple-scab/
-- https://appleorchard.in/diseases-and-pests/powdery-mildew/
-- https://appleorchard.in/diseases-and-pests/woolly-apple-aphid/
-- https://appleorchard.in/diseases-and-pests/spray-schedule/
-- https://appleorchard.in/harvest-storage-and-profit/
-- https://appleorchard.in/about/
-- https://appleorchard.in/hi/seb-ki-kheti/
+- https://applesorchard.in/
+- https://applesorchard.in/apple-tree/
+- https://applesorchard.in/varieties-and-rootstocks/
+- https://applesorchard.in/varieties/red-delicious/
+- https://applesorchard.in/varieties/spur-and-high-colour-strains/
+- https://applesorchard.in/varieties/gala/
+- https://applesorchard.in/varieties/golden-delicious/
+- https://applesorchard.in/varieties/granny-smith/
+- https://applesorchard.in/varieties/fuji/
+- https://applesorchard.in/varieties/ambri/
+- https://applesorchard.in/varieties/low-chill-hrmn-99-anna/
+- https://applesorchard.in/varieties/rootstocks/
+- https://applesorchard.in/pruning-and-canopy-management/
+- https://applesorchard.in/fertilizer-schedule-and-calculator/
+- https://applesorchard.in/alternate-bearing-and-fruit-quality/
+- https://applesorchard.in/root-rot-and-tree-mortality/
+- https://applesorchard.in/diseases-and-pests/
+- https://applesorchard.in/diseases-and-pests/apple-scab/
+- https://applesorchard.in/diseases-and-pests/powdery-mildew/
+- https://applesorchard.in/diseases-and-pests/woolly-apple-aphid/
+- https://applesorchard.in/diseases-and-pests/spray-schedule/
+- https://applesorchard.in/harvest-storage-and-profit/
+- https://applesorchard.in/about/
+- https://applesorchard.in/hi/seb-ki-kheti/
 
 ## Contact
 WhatsApp / phone +91 99787 91167. Publisher: Gujarat Bio Organics Pvt. Ltd. (https://www.gujaratbio.com/).

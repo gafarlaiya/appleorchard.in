@@ -1,4 +1,4 @@
-"""English pages for appleorchard.in, part 2: fertilizer + calculator, fruit quality, root rot, diseases and pests, spray schedule, harvest and profit, about."""
+"""English pages for applesorchard.in, part 2: fertilizer + calculator, fruit quality, root rot, diseases and pests, spray schedule, harvest and profit, about."""
 
 LBL = "Use only pesticides registered for apple by CIB&RC, at the dose and waiting period on the label, and follow your state's current spray schedule (SKUAST-K, Dr. YSP UHF or the state horticulture department)."
 
@@ -222,5 +222,5 @@ def build(g, S, HOME, season):
 <h2>Where the information comes from</h2><p>Dr. Y.S. Parmar University of Horticulture & Forestry (Nauni), SKUAST-Kashmir, SKUAST-Jammu, ICAR-Central Institute of Temperate Horticulture, the National Horticulture Board, the Ministry of Agriculture, USDA FAS, the National Innovation Foundation, NITI Aayog and DPPQ&S/CIB&RC. Sources are listed on each page.</p>
 <h2>Our rules</h2><ul><li>No yield promises; yields shown are research and good-orchard figures.</li><li>Pesticides are named by active ingredient only; doses come from the official spray schedule and label. Banned chemicals are flagged.</li><li>Our own products are clearly marked as ours.</li></ul>
 <h2>Contact</h2><p>WhatsApp or call +91 99787 91167 · sales@gujaratbio.com</p>"""
-    g["write"]("/about/", g["shell"]("/about/", "About Apple Orchard India | Gujarat Bio Organics", "Who publishes appleorchard.in, who writes it, where the information comes from and how to contact us.",
+    g["write"]("/about/", g["shell"]("/about/", "About Apple Orchard India | Gujarat Bio Organics", "Who publishes applesorchard.in, who writes it, where the information comes from and how to contact us.",
                                      "<h1>About Apple Orchard India</h1>" + body, crumbs=HOME, schemas=[{"@type": "AboutPage", "name": "About Apple Orchard India", "url": g["SITE"] + "/about/"}]))

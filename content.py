@@ -1,4 +1,4 @@
-"""English pages for appleorchard.in, part 1. Every number comes from the research reference (research-reference.md, 25 Nov 2026), which cites
+"""English pages for applesorchard.in, part 1. Every number comes from the research reference (research-reference.md, 25 Nov 2026), which cites
 Dr. YSP UHF Nauni, SKUAST-K, SKUAST-J, ICAR-CITH, NHB (incl. Clean Plant Programme), MoA&FW, USDA FAS, NIF, NITI Aayog, DPPQ&S/CIB&RC.
 Pesticides: molecule names only, doses 'as per label / university spray schedule' (owner rule)."""
 
@@ -270,7 +270,7 @@ def build(g):
 
 def llms(g):
     import os
-    lines = ["# Apple Orchard India (appleorchard.in)", "",
+    lines = ["# Apple Orchard India (applesorchard.in)", "",
              "> Free apple orchard guide for growers in Himachal Pradesh, Jammu & Kashmir, Uttarakhand and low-chill areas, by Gujarat Bio Organics. Built from Dr. YSP UHF Nauni, SKUAST-K, SKUAST-J, ICAR-CITH, NHB, MoA&FW and CIB&RC sources. English and Hindi.", "",
              "## Key pages"]
     names = {"/": "Apple farming in India: orchard guide", "/fertilizer-schedule-and-calculator/": "Apple fertilizer schedule and calculator (bigha, kanal, nali)",

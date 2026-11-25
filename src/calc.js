@@ -1,4 +1,4 @@
-/* Apple orchard fertilizer calculator (appleorchard.in).
+/* Apple orchard fertilizer calculator (applesorchard.in).
    Logic from the research reference, section 17: Dr. YSP UHF Nauni age-scaled doses (standard: 70:35:70 g x age up to 10 years,
    FYM 10 kg x age; M.9 high density: 35:17.5:35 g x age up to 7 years), Soil Health Card +/-25%, off-year brake on post-bloom N,
    CAN instead of urea in acidic soil, M.9 N cap 245 g/tree, SKUAST-K Karewa ceiling warning. Pure functions first, then page wiring. */

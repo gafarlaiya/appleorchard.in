@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""appleorchard.in static build: python3 build.py -> dist/. Content: content.py, content2.py (English), content_local.py (Hindi)."""
+"""applesorchard.in static build: python3 build.py -> dist/. Content: content.py, content2.py (English), content_local.py (Hindi)."""
 import html, json, os, shutil, datetime
 
-SITE = "https://appleorchard.in"
+SITE = "https://applesorchard.in"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
 WA = "919978791167"

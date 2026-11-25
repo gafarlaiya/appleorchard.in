@@ -1,4 +1,4 @@
-# appleorchard.in
+# applesorchard.in
 
 Free apple orchard guide for Indian growers by Gujarat Bio Organics.
 

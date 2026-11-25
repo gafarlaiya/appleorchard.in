@@ -1,4 +1,4 @@
-"""Hindi pillar for appleorchard.in (same facts as the English pages)."""
+"""Hindi pillar for applesorchard.in (same facts as the English pages)."""
 
 ALT = {"en": "/", "hi": "/hi/seb-ki-kheti/", "x-default": "/"}
 
