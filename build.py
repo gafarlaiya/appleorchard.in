@@ -159,6 +159,7 @@ if __name__ == "__main__":
     os.makedirs(DIST)
     shutil.copy(os.path.join(ROOT, "src", "styles.css"), DIST)
     shutil.copy(os.path.join(ROOT, "src", "calc.js"), DIST)
+    shutil.copy(os.path.join(ROOT, "src", "235bb937b1754b038af67d3b9269d1b8.txt"), DIST)  # IndexNow key
     if os.path.exists(os.path.join(ROOT, "src", "og.png")):
         shutil.copy(os.path.join(ROOT, "src", "og.png"), DIST)
     open(os.path.join(DIST, "icon.svg"), "w").write(LEAF.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"').replace("<svg ", '<svg width="64" height="64" ', 1).replace("<path", '<rect width="32" height="32" rx="7" fill="#1D4A2B"/><path', 1))
