@@ -173,6 +173,6 @@ if __name__ == "__main__":
         f"<url><loc>{SITE}{p}</loc><lastmod>{d}</lastmod></url>" for p, d, _ in PAGES) + "</urlset>\n"
     open(os.path.join(DIST, "sitemap.xml"), "w").write(sm)
     open(os.path.join(DIST, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
-    open(os.path.join(DIST, "_headers"), "w").write("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n/styles.css\n  Cache-Control: public, max-age=86400\n/calc.js\n  Cache-Control: public, max-age=86400\n")
+    open(os.path.join(DIST, "_headers"), "w").write("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Strict-Transport-Security: max-age=31536000\n  X-Frame-Options: SAMEORIGIN\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n/styles.css\n  Cache-Control: public, max-age=86400\n/calc.js\n  Cache-Control: public, max-age=86400\n")
     content.llms(globals())
     print("built", len(PAGES), "pages")
