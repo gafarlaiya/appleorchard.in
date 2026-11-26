@@ -106,10 +106,11 @@ def build(g):
 {answer("<b>Apple farming in India in short:</b> plant virus-indexed trees on a rootstock that suits your soil (never MM.106 in heavy clay), with 25–33% compatible pollinizers and 4–6 beehives per hectare at bloom. Standard Delicious needs 800–1,500 chilling hours below 7°C (about 1,500–2,700 m). Feed by tree age (Dr. YSP UHF: 70:35:70 g N:P₂O₅:K₂O per year of age, full 700:350:700 g from year 10), thin fruit at pea size, seal pruning cuts and keep water away from the trunk. Seedling orchards average 6–11 t/ha; clonal high-density orchards reach 30–45 t/ha and more.")}
 {facts([("2.69 million t", "India's apple output, 2024–25 (MoA&FW)"), ("about 70%", "grown in Jammu & Kashmir"), ("6–11 t/ha", "average of traditional orchards"), ("30–45+ t/ha", "clonal high-density orchards (ICAR-CITH)"), ("25–33%", "pollinizer trees needed in a block")])}
 <div class="grid">
-<a class="card" href="/fertilizer-schedule-and-calculator/"><span class="tag">Free tool</span><h3>Fertilizer calculator</h3><p>Dose by tree age for bigha, kanal, nali or acre, standard or M.9 high density.</p></a>
-<a class="card" href="/root-rot-and-tree-mortality/"><h3>Trees drying and dying?</h3><p>White root rot, collar rot and replant disease: how to tell them apart and save trees.</p></a>
-<a class="card" href="/alternate-bearing-and-fruit-quality/"><h3>Fruit drop and small apples</h3><p>Pollination, thinning, calcium and the October spray that breaks alternate bearing.</p></a>
-<a class="card" href="/diseases-and-pests/spray-schedule/"><h3>Apple spray schedule</h3><p>Stage-wise sprays from dormancy to leaf fall, and why calendar spraying backfires.</p></a>
+<a class="card" href="/apple-tree/"><span class="ct">The apple tree</span><p>Growth stages through the year, planting and care.</p></a>
+<a class="card" href="/fertilizer-schedule-and-calculator/"><span class="tag">Free tool</span><span class="ct">Fertilizer calculator</span><p>Dose by tree age for bigha, kanal, nali or acre, standard or M.9 high density.</p></a>
+<a class="card" href="/root-rot-and-tree-mortality/"><span class="ct">Trees drying and dying?</span><p>White root rot, collar rot and replant disease: how to tell them apart and save trees.</p></a>
+<a class="card" href="/alternate-bearing-and-fruit-quality/"><span class="ct">Fruit drop and small apples</span><p>Pollination, thinning, calcium and the October spray that breaks alternate bearing.</p></a>
+<a class="card" href="/diseases-and-pests/spray-schedule/"><span class="ct">Apple spray schedule</span><p>Stage-wise sprays from dormancy to leaf fall, and why calendar spraying backfires.</p></a>
 </div>
 
 <h2>Apple in India at a glance</h2>
@@ -185,10 +186,10 @@ def build(g):
             "The apple tree: growth stages, planting and care", body, crumbs=HOME, qas=qas, srcs=[S["skuastj"], S["cith"], S["nhb"], S["skuastk"], S["hp"]])
 
     # ---------------------------------------------------------------- varieties and rootstocks hub
-    cards = "".join(f'<a class="card" href="/varieties/{k}/"><h3>{v["short"]}</h3><p>{v["chill"].split(";")[0]}</p></a>' for k, v in VAR.items())
+    cards = "".join(f'<a class="card" href="/varieties/{k}/"><span class="ct">{v["short"]}</span><p>{v["chill"].split(";")[0]}</p></a>' for k, v in VAR.items())
     rows = [[f'<a href="/varieties/{k}/">{v["short"]}</a>', v["habit"].split(";")[0], v["chill"].split(";")[0].split(" (")[0], v["role"]] for k, v in VAR.items()]
     body = f"""{answer("Old Indian orchards rely on Royal and Red Delicious. New high-density blocks plant high-colour strains (Scarlet Spur-II, Red Chief, Super Chief, Oregon Spur, Jeromine, Red Velox) and Gala, always with 25–33% compatible diploid pollinizers such as Golden Delicious, Granny Smith, Redlum Gala, Fuji or Manchurian crabapple. Warm valleys use low-chill HRMN-99, Anna or Dorsett Golden (Himachal package of practices, SKUAST-J, NIF).")}
-<div class="grid">{cards}<a class="card" href="/varieties/rootstocks/"><span class="tag">Rootstocks</span><h3>M.9, MM.106, MM.111, M.7</h3><p>Which rootstock for which soil</p></a></div>
+<div class="grid">{cards}<a class="card" href="/varieties/rootstocks/"><span class="tag">Rootstocks</span><span class="ct">M.9, MM.106, MM.111, M.7</span><p>Which rootstock for which soil</p></a></div>
 <h2>Apple varieties in India compared</h2>
 {table(["Variety", "Habit", "Chilling below 7°C", "Role"], rows)}
 <p class="src">Sources: Himachal Pradesh package of practices, SKUAST-K, ICAR-CITH, NIF.</p>
@@ -209,10 +210,7 @@ def build(g):
         body = f"""{answer(v["intro"])}
 {table(["", v["short"]], [["Tree habit and fruit", v["habit"]], ["Chilling need", v["chill"]], ["Role in the orchard", v["role"]], ["Strengths", v["good"]], ["Weaknesses", v["weak"]]])}
 {v["extra"]}
-<h2>Rootstock, spacing and feeding</h2>
-<p>Choose the rootstock by soil, not by variety alone: M.9 only on deep, fertile, irrigated land with a trellis; MM.106 only on well-drained soil; MM.111 on drier slopes (<a href="/varieties/rootstocks/">rootstock guide</a>). Feed by tree age with our <a href="/fertilizer-schedule-and-calculator/">apple fertilizer calculator</a>.</p>
-<h2>Pollination</h2>
-<p>Keep 25–33% compatible pollinizers flowering at the same time, 4–6 beehives per hectare at bloom, a boron spray at pink bud, and no sprays during full bloom.</p>
+<p>Choose the rootstock by soil (<a href="/varieties/rootstocks/">rootstock guide</a>) and feed by tree age with the <a href="/fertilizer-schedule-and-calculator/">fertilizer calculator</a>.</p>
 <p>Compare: <a href="/varieties-and-rootstocks/">all apple varieties and rootstocks</a>.</p>"""
         qas = [(f"How much chilling does {v['short']} need?", v["chill"] + "."), (f"Does {v['short']} need a pollinizer?", v["role"] + "."), (f"What are the problems with {v['short']}?", v["weak"])]
         article(f"/varieties/{k}/", v["title"], (v["intro"][:150].rsplit(" ", 1)[0] + "…") if len(v["intro"]) > 155 else v["intro"],

@@ -58,11 +58,12 @@ def shell(path, title, desc, body, lang="en", schemas=None, crumbs=None, alterna
     return f"""<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><link rel="canonical" href="{SITE}{path}">{alt}
 <meta property="og:type" content="{ogtype}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{SITE}{path}"><meta property="og:site_name" content="Apple Orchard India"><meta property="og:locale" content="{ {'en':'en_IN','hi':'hi_IN','gu':'gu_IN'}[lang] }">
-<meta name="theme-color" content="#1E3F2A"><link rel="icon" href="/icon.svg" type="image/svg+xml">
+<meta property="og:image" content="{SITE}/og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(desc)}"><meta name="twitter:image" content="{SITE}/og.png">
+<meta name="theme-color" content="#F6F3EE"><link rel="icon" href="/icon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800{'&family=Noto+Sans+Devanagari:wght@400;700' if lang=='hi' else ''}{'&family=Noto+Sans+Gujarati:wght@400;700' if lang=='gu' else ''}&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&family=Young+Serif{'&family=Noto+Sans+Devanagari:wght@400;700' if lang=='hi' else ''}{'&family=Noto+Sans+Gujarati:wght@400;700' if lang=='gu' else ''}&display=optional"><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&family=Young+Serif{'&family=Noto+Sans+Devanagari:wght@400;700' if lang=='hi' else ''}{'&family=Noto+Sans+Gujarati:wght@400;700' if lang=='gu' else ''}&display=optional" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&family=Young+Serif{'&family=Noto+Sans+Devanagari:wght@400;700' if lang=='hi' else ''}{'&family=Noto+Sans+Gujarati:wght@400;700' if lang=='gu' else ''}&display=optional" rel="stylesheet"></noscript>
 <link rel="stylesheet" href="/styles.css?v={TODAY}">{extra_head}{ld}
-<script>(function(w,d,s,l,i){{w[l]=w[l]||[];w[l].push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i;f.parentNode.insertBefore(j,f);}})(window,document,'script','dataLayer','{GTM}');</script>
+<script>window.dataLayer=window.dataLayer||[];(function(){{var done=false;function load(){{if(done)return;done=true;window.dataLayer.push({{'gtm.start':new Date().getTime(),event:'gtm.js'}});var j=document.createElement('script');j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id={GTM}';document.head.appendChild(j);}}['scroll','pointerdown','keydown','touchstart'].forEach(function(e){{window.addEventListener(e,load,{{once:true,passive:true}});}});window.addEventListener('load',function(){{setTimeout(load,4000);}});}})();</script>
 </head><body>
 <header class="top"><div class="wrap"><a class="brand" href="{'/' if lang=='en' else nav[0][0]}">{LEAF}Apple Orchard India</a><nav class="nav" aria-label="Main">{navh}</nav>{langs}</div></header>
 <main class="wrap">{crumbh}{body}</main>
@@ -74,7 +75,7 @@ def shell(path, title, desc, body, lang="en", schemas=None, crumbs=None, alterna
 FOOT = {
     "en": f"""<footer class="foot"><div class="wrap"><div class="grid">
 <div><b>Apple Orchard India</b><br>A free apple orchard guide for growers in Himachal Pradesh, Jammu & Kashmir, Uttarakhand and new low-chill areas, built from Dr. YSP UHF Nauni, SKUAST-Kashmir, ICAR-CITH, NHB and government sources. Run by <a href="https://www.gujaratbio.com/">Gujarat Bio Organics Pvt. Ltd.</a>, working with farmers since 2006.</div>
-<div><b>Guides</b><br><a href="/">Apple farming guide</a><br><a href="/varieties-and-rootstocks/">Varieties & rootstocks</a><br><a href="/fertilizer-schedule-and-calculator/">Fertilizer calculator</a><br><a href="/root-rot-and-tree-mortality/">Root rot & dying trees</a><br><a href="/diseases-and-pests/spray-schedule/">Spray schedule</a></div>
+<div><b>Guides</b><br><a href="/">Apple farming guide</a><br><a href="/apple-tree/">The apple tree</a><br><a href="/varieties-and-rootstocks/">Varieties & rootstocks</a><br><a href="/fertilizer-schedule-and-calculator/">Fertilizer calculator</a><br><a href="/root-rot-and-tree-mortality/">Root rot & dying trees</a><br><a href="/diseases-and-pests/spray-schedule/">Spray schedule</a></div>
 <div><b>Contact</b><br>WhatsApp / call {PHONE}<br><a href="/about/">About this site</a><br><a href="https://bananafarming.in/">bananafarming.in</a> · <a href="https://mangofarming.in/">mangofarming.in</a> · <a href="https://www.gujaratbio.com/crops/apple">GBO apple page</a></div>
 </div><p>Information is general guidance from published university, ICAR and government recommendations. Always follow the product label and your state horticulture department or university spray schedule for pesticide use. Results vary with altitude, soil, weather and care.</p></div></footer>""",
     "hi": f"""<footer class="foot"><div class="wrap"><p><b>Apple Orchard India</b> — गुजरात बायो ऑर्गेनिक्स प्रा. लि. द्वारा (2006 से किसानों के साथ)। WhatsApp / कॉल {PHONE}. जानकारी डॉ. वाई.एस. परमार विश्वविद्यालय नौणी, SKUAST-कश्मीर और ICAR-CITH की सिफारिशों पर आधारित है। दवा का उपयोग लेबल और बागवानी विभाग की स्प्रे सारणी के अनुसार करें।</p></div></footer>""",
@@ -158,6 +159,8 @@ if __name__ == "__main__":
     os.makedirs(DIST)
     shutil.copy(os.path.join(ROOT, "src", "styles.css"), DIST)
     shutil.copy(os.path.join(ROOT, "src", "calc.js"), DIST)
+    if os.path.exists(os.path.join(ROOT, "src", "og.png")):
+        shutil.copy(os.path.join(ROOT, "src", "og.png"), DIST)
     open(os.path.join(DIST, "icon.svg"), "w").write(LEAF.replace('aria-hidden="true"', 'xmlns="http://www.w3.org/2000/svg"').replace("<svg ", '<svg width="64" height="64" ', 1).replace("<path", '<rect width="32" height="32" rx="7" fill="#1D4A2B"/><path', 1))
     import content, content_local
     content.build(globals())
